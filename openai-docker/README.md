@@ -2,13 +2,15 @@
 ```
 docker build -t xxradar/openai-cli .
 ```
-Make sure to have OPENAI_API_KEY set
+## OPENAI API key required
 ```
 export OPENAI_API_KEY=sk-xxxxxxxxxxx
 ```
+## Testing the image
 ```
 docker run -it -e OPENAI_API_KEY=$OPENAI_API_KEY xxradar/openai-cli 
 ```
+## Example
 ```
 docker run -it -e OPENAI_API_KEY=$OPENAI_API_KEY xxradar/openai-cli \
           openai api chat.completions.create \
